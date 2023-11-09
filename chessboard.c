@@ -1,7 +1,7 @@
 void chessboard() {
     while(front_is_clear()) {
         step();
-// scan-beepers
+
         turn_left();
         turn_left();
         step();
@@ -17,7 +17,7 @@ void chessboard() {
             turn_left();
             step();
         }
-//
+
     }
     if(facing_east()) {
         turn_left();
@@ -31,7 +31,6 @@ void chessboard() {
     if(front_is_clear()) {
         step();
 
-// scan-beepers
         turn_left();
         turn_left();
         step();
@@ -47,7 +46,6 @@ void chessboard() {
             turn_left();
             step();
         }
-//
 
         if(right_is_blocked()) {
             turn_left();
