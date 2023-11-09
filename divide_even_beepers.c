@@ -1,0 +1,21 @@
+void divide_even_beepers(){
+    step();
+    while(beepers_present()){
+        pick_beeper();
+    }
+    while(beepers_in_bag()){
+        put_beeper();
+        step();
+        put_beeper();
+        turn_left();
+        turn_left();
+        step();
+        turn_left();
+        turn_left();
+    }
+    turn_left();
+    turn_left();
+    step();
+    turn_left();
+    turn_left();
+}
